@@ -1,14 +1,13 @@
-// Create component User
-// Accept name as prop
-// Render <h2>Hello {name}</h2>
-import './App.css'
-import UserComponent from './components/props-app6';
+import {useState} from "react";
+
 function App()
 {
+    const [cnt,func] = useState(0);
     return(
         <>
-            <UserComponent name='Param'/>
+            <h1>{cnt}</h1>
+            <button onClick={()=>{func(cnt+1)}}>Press to increase the count</button>
         </>
     )
 }
-export default App
+export default App;
