@@ -30,7 +30,11 @@ class App extends React.Component {
   {
     this.setState({ count: this.state.count + 1 });
   };
-
+  getSnapshotBeforeUpdate()
+  {
+    console.log("pata nai");
+    return true;
+  }
   render() 
   {
     console.log("2----->render");
