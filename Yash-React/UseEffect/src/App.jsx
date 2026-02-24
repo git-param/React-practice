@@ -4,6 +4,7 @@ import EffectBasic from './components/EffecBasicDemo'
 import FirstMountExample from './components/FirstMountDemo'
 import UnmountExample from './components/Cleanup'
 import UpdateExample from './components/DidUpdateDemo'
+import CounterWithLifecycle from './components/Example'
 
 function App(){
   return (
@@ -12,10 +13,12 @@ function App(){
       <hr /> */}
       {/* <FirstMountExample /> */}
       <hr />
-      <UpdateExample />  
+      {/* <UpdateExample />   */}
       <hr />
       {/* <UnmountExample />
        */}
+       <hr />
+       <CounterWithLifecycle />
     </div>
   ) 
 }
